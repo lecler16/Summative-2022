@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Title>Formative Assignment</Title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="SummativeCSS.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+
+  <nav class="navbar sticky-top navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://i.pinimg.com/originals/7a/7d/1e/7a7d1ede858075f5344dfb7627b3a3aa.jpg" alt="Tate" width="30" height="24">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Summative Assignment - Art.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">Sign up</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#giftCards">Gifts</a>
+            </li>              
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#main">Artists</a></li>
+                <li><a class="dropdown-item" href="#main">Artworks</a></li>
+                <li><a class="dropdown-item" href="#main">Sculptures</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#main">The Impressionists<span class="badge bg-secondary">New!</span></a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+          </ul>
+          <!--
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>-->
+        </div>
+      </div>
+  </nav>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="yayoi-kusama720.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  
+  <div class="content">
+    <h1>The Tate Collection</h1>
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+    <p1>Scroll down to start exploring!</p1>
+    <svg width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <line id ="arrow" x1="20" x2="20" y1="0" y2="30" stroke="white" stroke-width="2"/>
+      <line x1="10" x2="20" y1="20" y2="30" stroke="white" stroke-width="2"/>
+      <line x1="20" x2="30" y1="30" y2="20" stroke="white" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <hr>
+  <main id="main">
+      <div class="card" style="width: 18rem;" id="Card_1">
+          <img src="https://th.bing.com/th/id/R.724f743456cc46aef658b96df2e05107?rik=bBFYhuTeloeq1g&riu=http%3a%2f%2fmymodernmet.com%2fwp%2fwp-content%2fuploads%2f2016%2f12%2f5-picasso-self-portrait.jpg&ehk=H0erBYsgy3llmAAqGp%2bSUk5BV%2blQ1z53R5zqLHfB1fg%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Self portrait, Picasso">
+          <div class="card-body">
+          <h5 class="card-title">Artists</h5>
+          <p class="card-text">Explore our artist visualisation</p>
+          <a href="#graph" class="btn btn-primary stretched-link" id="graphBtn">Click here</a>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;" id="Card_2">
+          <img src="https://th.bing.com/th/id/OIP.gXdMsFPUqUeOsl2lQJD0sgHaJc?pid=ImgDet&rs=1" class="card-img-top" alt="Sunflowers, Vincent van Gogh">
+          <div class="card-body" >
+          <h5 class="card-title">Paintings</h5>
+          <p class="card-text">Visit our galleries to see what paintings are on show</p>
+          </div>
+      </div>
+      <div class="card" style="width: 18rem;" id="Card_3">
+        <img src="https://th.bing.com/th/id/R.ff5d035d57c7eb3a6a092f2e31d161fd?rik=wUshgp84Huw7Xw&riu=http%3a%2f%2fidaaf.com%2fwp-content%2fuploads%2f2016%2f01%2fzero1magazine.com_.jpg&ehk=myfzRYUfYF%2fM%2b%2fcyyEB6ZoF4l46sZt1KuGSNk2PMY6g%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Trepied, Alexander Calder">
+        <div class="card-body" >
+        <h5 class="card-title">Sculptures</h5>
+        <p class="card-text">Visit our galleries to see what sculptures are on show</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" id="Card_4">
+        <img src="https://th.bing.com/th/id/R.96ffc5ce3b22e0b8fedffad282894740?rik=9Wbtb%2byM39zHkg&riu=http%3a%2f%2fmodernism-literature-movement.weebly.com%2fuploads%2f2%2f2%2f0%2f9%2f22095112%2f423537032.jpg&ehk=oPegdnZPbBqYJqipVzQyRpCN0OGT7cQ%2ffy9wAo1XnnQ%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Water Lily Pond, Claude Monet">
+        <div class="card-body" >
+        <h5 class="card-title">The Impressionists   <span class="badge bg-secondary">New!</span></h5>
+        <p class="card-text">Visit Discover our all-new collection of impressionist artworks!</p>
+        </div>
+      </div>
+  </main>
+
+  <!-- <div class="chartMenu"></div>
+  <div class="chartCard">
+    <div class="chartBox">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div> -->
+  <div class="hidden" id="graph">
+  <a>A graph would appear.</a>
+  </div>
+  <hr>
+  <div class="card mb-3" style="max-width: 800px;" id="giftCards">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://th.bing.com/th/id/R.05c6eefd6ce801c8cba8b0d6bbf2107e?rik=KMwST4A8TOGCCg&riu=http%3a%2f%2fwww.lightbookstore.com.au%2fwp-content%2fuploads%2f2014%2f08%2fGift_Card.jpg&ehk=0SilU6Ewg6boLV5TF400Lr6CKubkVcqPIEaDS2d1POc%3d&risl=&pid=ImgRaw&r=0" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Gift Cards</h5>
+          <p class="card-text">Ideal for the subjective nature of the world of art, a perfect gift for family and friends</p>
+          <p>Choose an amount, enter the email address of the intended recipient, and add a message! <a type="button" class="btn btn-link" id="giftdetails">Click here</a></p>
+          <form id="gift" class="hidden">
+            <div class="input-group mb-3">
+              <span class="input-group-text">£</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest pound)">
+              <span class="input-group-text">.00</span>
+            </div>
+            <div class="mb-3">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Leave a message!</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>                   
+            <button type="submit" class="btn btn-primary">Send!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <form>
+    <button type="button" class="btn btn-outline-info" id="contact1" >Sign up to our newsletter</button>
+    <div id="hidform1" class="hidden">
+    <p>Sign up to our newsletter to receive weekly updates on new collections and exhibitions!</p>
+    <div class="mb-3">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">I am not a robot</label>
+    </div>
+    <button type="submit" class="btn btn-primary" id="Submit">Submit</button>
+    <p id="message"></p>
+  </div>
+  </form>
+
+
+  <form>
+  <button type="button" class="btn btn-outline-info" id="contact2" >Or simply get in touch with us</button>
+  <div id="hidform2" class="hidden">
+    <div class="mb-3">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Leave a message!</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send!</button>
+  </div>
+  </form>
+
+
+  <footer>My dataset can be found <a href="https://github.com/tategallery/collection">here</a></footer>
+
+
+  <script src="SummativeJS.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+</body>
+</html>
+
